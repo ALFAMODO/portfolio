@@ -19,7 +19,7 @@ const Skills = () => {
         <p className='text-xl tracking-widest uppercase text-teal-700 font-bold font-prata'>
           Skills
         </p>
-        <h2 className='py-4 text-lg md:text-2xl lg:text-4xl'>What I Can Do</h2>
+        <h2 className='py-4 text-lg md:text-2xl lg:text-4xl font-prata'>What I Can Do</h2>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
         <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>

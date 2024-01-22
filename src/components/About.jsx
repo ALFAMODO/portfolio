@@ -11,7 +11,7 @@ const About = () => {
           <p className='text-xl tracking-widest uppercase text-teal-700 font-bold font-prata'>
             About
           </p>
-          <h2 className='py-4 text-lg md:text-2xl lg:text-4xl'>Who I Am</h2>
+          <h2 className='py-4 text-lg md:text-2xl lg:text-4xl font-prata'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
           I specialize in data science and analytics, focusing on extracting actionable insights from complex datasets and developing data-driven solutions. I have a strong passion for continuous learning and believe in the versatility of data science, recognizing that there are multiple approaches to solving analytical challenges. While my primary expertise lies in data analysis, statistical modeling, and machine learning using tools such as Python and R, I am adaptable and quick to grasp new technologies and methodologies as the situation demands. I firmly believe that being a proficient data scientist involves selecting the most suitable tools and techniques for each unique analytical problem.
           </p>
