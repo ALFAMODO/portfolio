@@ -21,22 +21,25 @@ const Projects = () => {
             websiteUrl='https://www.alfamodo.com/'
             focus='Software Development'
             completed='true'
+            status="completed"
           />
           <ProjectItem
             title='Olympics Analysis'
-            projectUrl='/olympics'
+            projectUrl='/olympics-analysis'
             description = "This application stands as a hallmark of my expertise in data science and programming. It meticulously gathers and processes extensive datasets from various Olympic events, offering insightful and interactive visual representations of athletes' performances, medal tallies, and historical trends. My focus has been on creating an intuitive user interface that allows users to easily navigate through a wealth of information, uncovering patterns and stories behind the data. This project not only demonstrates my proficiency in Python and data visualization but also my ability to transform complex datasets into engaging dashboard"
             websiteUrl='https://olympics-analysis-project.streamlit.app'
             focus= 'Data Visualization'
             completed='true'
+            status="completed"
           />
           <ProjectItem
             title='AI Workout Plan Generator'
-            projectUrl='/workout-plan'
+            projectUrl='/ai-workout-tool'
             description="Introducing the AI-Powered Workout Plan Generator— fitness app built with OpenAI's advanced technology. This app simplifies fitness planning by creating personalized workout routines tailored to your goals and fitness level. Enjoy a user-friendly interface, access to exercise descriptions and tutorials, and the ability to track your progress effortlessly. Whether you're looking to build muscle, lose weight, or improve endurance, this app takes the guesswork out of fitness, making it accessible and efficient for all. Elevate your fitness journey with the power of AI."
             websiteUrl='https://www.alfamodo.com/fitness/ai-tools/workout'
             focus= 'Artificial Intelligence'
             completed='true'
+            status="completed"
           />
           <ProjectItem
             title='Healthcare Fraud Anomaly Detection'
@@ -45,6 +48,7 @@ const Projects = () => {
             websiteUrl='https://github.com/ALFAMODO/Fraud-Detection'
             focus= 'Machine Learning'
             completed='true'
+            status="completed"
           />
         </div>
         <div className="mt-20">
@@ -59,22 +63,7 @@ const Projects = () => {
             websiteUrl=''
             focus='Neural Networks'
             completed='false'
-          />
-          <ProjectItem
-            title='Chatbot for Customer Support'
-            projectUrl=''
-            //description = "This application stands as a hallmark of my expertise in data science and programming. It meticulously gathers and processes extensive datasets from various Olympic events, offering insightful and interactive visual representations of athletes' performances, medal tallies, and historical trends. My focus has been on creating an intuitive user interface that allows users to easily navigate through a wealth of information, uncovering patterns and stories behind the data. This project not only demonstrates my proficiency in Python and data visualization but also my ability to transform complex datasets into engaging dashboard"
-            websiteUrl=''
-            focus= 'Deep Learning'
-            completed='false'
-          />
-          <ProjectItem
-            title='Fitness Tracker Dashboard'
-            projectUrl=''
-            //description="Introducing the AI-Powered Workout Plan Generator— fitness app built with OpenAI's advanced technology. This app simplifies fitness planning by creating personalized workout routines tailored to your goals and fitness level. Enjoy a user-friendly interface, access to exercise descriptions and tutorials, and the ability to track your progress effortlessly. Whether you're looking to build muscle, lose weight, or improve endurance, this app takes the guesswork out of fitness, making it accessible and efficient for all. Elevate your fitness journey with the power of AI."
-            websiteUrl=''
-            focus= 'Data Analytics'
-            completed='false'
+            status="In Progress"
           />
           <ProjectItem
             title='Sentiment Analysis for Product Reviews'
@@ -83,7 +72,27 @@ const Projects = () => {
             websiteUrl='https://github.com/ALFAMODO/Fraud-Detection'
             focus= 'Natural Language Processing'
             completed = 'false'
+            status="In Progress"
           />
+          <ProjectItem
+            title='Chatbot for Customer Support'
+            projectUrl=''
+            //description = "This application stands as a hallmark of my expertise in data science and programming. It meticulously gathers and processes extensive datasets from various Olympic events, offering insightful and interactive visual representations of athletes' performances, medal tallies, and historical trends. My focus has been on creating an intuitive user interface that allows users to easily navigate through a wealth of information, uncovering patterns and stories behind the data. This project not only demonstrates my proficiency in Python and data visualization but also my ability to transform complex datasets into engaging dashboard"
+            websiteUrl=''
+            focus= 'Deep Learning'
+            completed='false'
+            status="Yet to start"
+          />
+          <ProjectItem
+            title='Fitness Tracker Dashboard'
+            projectUrl=''
+            //description="Introducing the AI-Powered Workout Plan Generator— fitness app built with OpenAI's advanced technology. This app simplifies fitness planning by creating personalized workout routines tailored to your goals and fitness level. Enjoy a user-friendly interface, access to exercise descriptions and tutorials, and the ability to track your progress effortlessly. Whether you're looking to build muscle, lose weight, or improve endurance, this app takes the guesswork out of fitness, making it accessible and efficient for all. Elevate your fitness journey with the power of AI."
+            websiteUrl=''
+            focus= 'Data Analytics'
+            completed='false'
+            status="Yet to start"
+          />
+
         </div>
       </div>
       </div>

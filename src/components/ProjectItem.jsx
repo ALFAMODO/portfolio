@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const ProjectItem = ({ title, focus, projectUrl, websiteUrl, description, completed }) => {
+const ProjectItem = ({ title, focus, projectUrl, websiteUrl, description, completed, status }) => {
     return (
         <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-slate-100'>
             <section className="w-full p-5 space-y-3">
@@ -24,7 +24,7 @@ const ProjectItem = ({ title, focus, projectUrl, websiteUrl, description, comple
                             Details
                         </span>
                     </button></Link>
-                </div> : <p>Yet to start</p>}
+                </div> : <p>{status}</p>}
             </section>
         </div>
     )
