@@ -7,11 +7,11 @@ import { GiGraduateCap } from "react-icons/gi";
 const Education = () => {
   return (
     <div id='education' className='w-full lg:h-screen '>
-    <div className='max-w-[1240px] mx-auto justify-center pt-28'>
+    <div className='max-w-[1240px] p-6 md:p-0 mx-auto justify-center pt-10 md:pt-28'>
         <p className='text-xl tracking-widest uppercase text-teal-700 font-bold font-prata'>
           EDUCATION
         </p>
-        <h2 className='py-4 text-lg md:text-2xl lg:text-4xl font-prata'>What I&apos;ve Done</h2>
+        <h2 className='py-2 md:py-4 text-lg md:text-2xl lg:text-4xl font-prata'>What I&apos;ve Done</h2>
     </div>
     <div className="relative">
       <div className="backdrop-blur-sm opacity-90">

@@ -8,15 +8,15 @@ const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-        <div>
+      <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className='py-4 text-gray-700 text-6xl font-bold'>
+          <h1 className='py-2 md:py-4 text-gray-700 text-2xl md:text-4xl lg:text-6xl font-bold'>
             Hi, I&#39;m <span className='text-teal-700'> Shikshit Gupta</span>
           </h1>
-          <h1 className='py-2 text-gray-700 font-bold text-4xl'>Data Scientist</h1>
-          <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
+          <h1 className='md:py-2 text-gray-700 font-bold text-lg md:text-2xl lg:text-4xl'>Data Scientist</h1>
+          <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto md:text-base text-sm'>
             I am focused on developing data-driven solutions, seamlessly integrating advanced analytics and machine learning techniques with backend technologies to create powerful and insightful data applications.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>

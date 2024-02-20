@@ -5,9 +5,9 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full'>
+    <div id='projects' className='p-6 md:p-2 w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-      <div className='max-w-[1240px] mx-auto justify-center pt-28'>
+      <div className='max-w-[1240px] mx-auto justify-center pt-10 md:pt-28'>
         <p className='text-xl tracking-widest uppercase text-teal-700 font-bold font-prata'>
           Projects
         </p>
