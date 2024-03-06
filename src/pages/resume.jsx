@@ -112,20 +112,24 @@ const resume = () => {
             <span className='px-2'>|</span>Noida, IN
             <span className='px-2'> | </span><Link href="https://www.optiontools.in"><FaLink className="h-5 w-5 text-rose-500 cursor-pointer" /></Link>
           </p>
-          <p className='py-1 italic'>Financial Visualization Specialist (2023 Jan - 2023 July)</p>
+          <p className='py-1 italic'>Financial Visualization Specialist (2022 Dec - 2023 Aug)</p>
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Scientist</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              Led Data Analysis and Visualization at OptionTools, for option chains and current market trends using Tableau & SQL.
+              Improved financial models by leveraging MySQL and Tableau to perform stock market analysis using stock exchange data,
+              resulting in a 17% increase in accuracy and providing valuable insights that drive informed decision-making and strategic growth.
             </li>
             <li>
-              Developed interactive graphs using Python (Matplotlib, Seaborn) and Machine Learning algorithms to transform raw data into actionable intelligence, which enhanced user decision-making in trading and led to a rapid increase in subscribers.
+              Enhanced user decision-making using Python (Matplotlib, Seaborn) and machine learning structured algorithms to transform raw
+              data into actionable intelligence setting a new standard for data-driven trading excellence and increase in customers by 30%.
+            </li>
+            <li>
+              Leveraged advanced analytics and interactive dashboards in Tableau to optimize investment strategies for customers, resulting in
+              improvement in portfolio performance and significantly increasing investor confidence through data-centric approaches.
             </li>
           </ul>
         </div>
 
-
-        {/* Personal Experience */}
         <div className='py-6'>
           <p className='flex italic'>
             <span className='font-bold italic'>
@@ -138,17 +142,42 @@ const resume = () => {
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Analyst</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              Engaged in a dual role encompassing development and support with an American-based corporation, for their interconnected applications.
+              Led the development and deployment of innovative solutions for the biometric system, resulting in a 63% improvement in user
+              experience. Streamlined processes by analyzing system logs, identifying and resolving flaws in credit card payment transactions,
+              leading to a 7.5% reduction in transaction errors and optimization in ticket issuance.
             </li>
             <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
+              Engaged effectively with American clients to tackle business challenges and seamlessly adapted to their work culture, ensuring the
+              successful implementation of innovative solutions.
             </li>
             <li>
-              Improved their ticketing interface, biometric system and camera functioning by automating regular internal system audit reports, resulting in unprecedented efficiency and a substantial reduction in operational costs.</li>
-            <li>
-              As Intern, Acquired proficiency in cutting-edge technologies such as React.js, MongoDB and Node.js by successfully developing Flight Booking application featuring a polyglot architecture.
+              Strengthened the online ticketing interface and camera monitoring application by implementing automated daily system audit
+              reports, resulting in a notable 20% decrease in operational costs while bolstering team productivity.
             </li>
+            <li>
+              Earned an Appreciation Certificate for exceptional leadership and management skills in steering a team of developers, significantly
+              enhancing their application performance, and successful completion of key projects and mandatory internship.
+            </li>
+          </ul>
+        </div>
+
+        <div className='py-6'>
+          <p className='flex italic'>
+            <span className='font-bold italic'>
+              Iconseair Management Solutions
+            </span>
+            <span className='px-2'>|</span>Moradabad, IN
+            <span className='px-2'> | </span><Link href="https://economictimes.indiatimes.com/company/iconseair-management-solutions-private-limited/U74120UP2011PTC047057"><FaLink className="h-5 w-5 text-rose-500 cursor-pointer" /></Link>
+          </p>
+          <p className='py-1 italic'>Technical Intern (2020 July - 2020 Sept)</p>
+          <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Analyst</p>
+          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+            <li>
+              Applied advanced data analysis techniques, such as regression analysis and trend forecasting, to scrutinize financial data, identifying
+              patterns and anomalies, and providing valuable insights for informed financial decision-making in accounting data.</li>
+            <li>
+              Increased 80% efficiency and accuracy by revolutionizing the company's traditional methods by implementing advanced digital
+              solutions utilizing tools like MS Excel, SQL, and Zoho Books in accounting, auditing activities, and tax consultancy.</li>
           </ul>
         </div>
 
@@ -172,7 +201,7 @@ const resume = () => {
             <li>
               Oversaw comprehensive understanding, operations in Data Visualization and Acquisition by developing various dashboards, plotting graphs and predictive modelling on financial historical datasets of trending stocks.
             </li>
-            
+
           </ul>
         </div>
       </div>

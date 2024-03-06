@@ -1,14 +1,16 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import AboutImg from '../../public/assets/Resume_QR.jpeg';
 
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-      <div>
+        <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
@@ -48,6 +50,9 @@ const Main = () => {
                 <BsFillPersonLinesFill />
               </div>
             </Link>
+          </div>
+          <div className="flex justify-center mt-4">
+            <Image src={AboutImg} alt='resume' className="border-2 border-teal-700 rounded px-1"/>
           </div>
         </div>
       </div>
