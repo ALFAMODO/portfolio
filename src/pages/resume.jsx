@@ -176,7 +176,7 @@ const resume = () => {
               Applied advanced data analysis techniques, such as regression analysis and trend forecasting, to scrutinize financial data, identifying
               patterns and anomalies, and providing valuable insights for informed financial decision-making in accounting data.</li>
             <li>
-              Increased 80% efficiency and accuracy by revolutionizing the company's traditional methods by implementing advanced digital
+              Increased 80% efficiency and accuracy by revolutionizing the company&apos;s traditional methods by implementing advanced digital
               solutions utilizing tools like MS Excel, SQL, and Zoho Books in accounting, auditing activities, and tax consultancy.</li>
           </ul>
         </div>
