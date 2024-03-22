@@ -30,6 +30,7 @@ module.exports = {
         prata: "'Prata', serif",
         sync: "'Syncopate', sans-serif",
         tenor: "'Tenor Sans', sans-serif",
+        cors: "'Cormorant Garamond', serif",
       },
     },
   },

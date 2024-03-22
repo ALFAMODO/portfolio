@@ -5,6 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import AboutImg from '../../public/assets/Resume_QR.jpeg';
+import { BiArrowToRight } from 'react-icons/bi';
 
 const Main = () => {
   return (
@@ -14,8 +15,8 @@ const Main = () => {
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className='py-2 md:py-4 text-gray-700 text-2xl md:text-4xl lg:text-6xl font-bold'>
-            Hi, I&#39;m <span className='text-teal-700'> Shikshit Gupta</span>
+          <h1 className='py-2 md:py-4 text-gray-700 text-2xl md:text-4xl lg:text-6xl font-bold tracking-wider'>
+            Hi, I&#39;m <span className='text-teal-700 font-cors'> Shikshit Gupta</span>
           </h1>
           <h1 className='md:py-2 text-gray-700 font-bold text-lg md:text-2xl lg:text-4xl'>Data Scientist</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto md:text-base text-sm'>
@@ -54,6 +55,7 @@ const Main = () => {
           <div className="flex justify-center mt-4">
             <Image src={AboutImg} alt='resume' className="border-2 border-teal-700 rounded px-1"/>
           </div>
+          <Link href="/resume"><button className=" italic mt-2 text-sm rounded-full px-4"><p className="flex justify-center items-center gap-1">Digital Resume<BiArrowToRight/></p></button></Link>
         </div>
       </div>
     </div>

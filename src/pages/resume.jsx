@@ -19,7 +19,7 @@ const resume = () => {
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
         <h2 className='text-center font-marcel tracking-wide text-3xl'>RESUME</h2>
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center font-marcel text-3xl tracking-wide'>Shikshit Gupta</h2>
+          <h2 className='text-center font-cors font-bold text-3xl tracking-wide'>Shikshit Gupta</h2>
           <div className='flex'>
             <a
               href='https://www.linkedin.com/in/shikshit-gupta-52794913a/'
@@ -41,7 +41,7 @@ const resume = () => {
           <div className='hidden sm:block'>
             <p>
               Proven Leadership <span className='px-1'>|</span> Data Scientist{' '}
-              <span className='px-1'>|</span> Complex Problem Solving
+              <span className='px-1'>|</span> AI ENGINEER
             </p>
           </div>
           <div className='block sm:hidden'>
@@ -116,18 +116,16 @@ const resume = () => {
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Scientist</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              Improved financial models by leveraging MySQL and Tableau to perform stock market analysis using stock exchange data,
-              resulting in a 17% increase in accuracy and providing valuable insights that drive informed decision-making and strategic growth.
+              Discovered emerging market trends through research to build financial models and perform stock market analysis by leveraging Python libraries, and SQL database, resulting in a 17% increase in accuracy that drives informed decision-making and strategic growth.
             </li>
             <li>
-              Enhanced user decision-making using Python (Matplotlib, Seaborn) and machine learning structured algorithms to transform raw
-              data into actionable intelligence setting a new standard for data-driven trading excellence and increase in customers by 30%.
+              Employed statistical analysis, data visualization, and predictive modeling to inform targeted marketing strategies with customer segmentation analysis based on demographic and behavioral characteristics, leading to a gain of over 100K+ monthly active users.
             </li>
             <li>
-              Leveraged advanced analytics and interactive dashboards in Tableau to optimize investment strategies for customers, resulting in
-              improvement in portfolio performance and significantly increasing investor confidence through data-centric approaches.
+              Leveraged advanced analytics and interactive dashboards using Tableau to optimize investment strategies for customers, improving portfolio performance by 5% and 40% boost in product adoption through business analysis & data-centric approaches.
             </li>
           </ul>
+          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> Azure, Tableau, Python, MySQL, NumPy, Pandas, Matplotlib, Seaborn, SciPy, Slack, Notion</div>
         </div>
 
         <div className='py-6'>
@@ -142,23 +140,16 @@ const resume = () => {
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Analyst</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              Led the development and deployment of innovative solutions for the biometric system, resulting in a 63% improvement in user
-              experience. Streamlined processes by analyzing system logs, identifying and resolving flaws in credit card payment transactions,
-              leading to a 7.5% reduction in transaction errors and optimization in ticket issuance.
+              Directed the development and deployment of innovative features for the biometric system and automation of audit reports, integrating with an intuitive interface. This strategic enhancement resulted in a remarkable 63% increase in user satisfaction metrics.
             </li>
             <li>
-              Engaged effectively with American clients to tackle business challenges and seamlessly adapted to their work culture, ensuring the
-              successful implementation of innovative solutions.
+              Developed a comprehensive filtered framework for system logs, mitigating vulnerabilities in credit card transactions. This initiative yielded a notable 7.5% reduction in transaction failures, improving payment processing and ticket issuance procedures.
             </li>
             <li>
-              Strengthened the online ticketing interface and camera monitoring application by implementing automated daily system audit
-              reports, resulting in a notable 20% decrease in operational costs while bolstering team productivity.
-            </li>
-            <li>
-              Earned an Appreciation Certificate for exceptional leadership and management skills in steering a team of developers, significantly
-              enhancing their application performance, and successful completion of key projects and mandatory internship.
+              Collaborated closely with clients to refine and optimize both the online ticketing interface and camera monitoring application, exhibiting a detailed approach to tackling more than 20+ intricate business challenges. Applied sophisticated pattern recognition algorithms to enhance system functionality, showcasing adaptability to their unique work culture.
             </li>
           </ul>
+          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> React, Python, Javascript, MySQL, MongoDB, Service Now, Splunk, AWS, Jira, Confluence, Rest API </div>
         </div>
 
         <div className='py-6'>
@@ -173,12 +164,13 @@ const resume = () => {
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Analyst</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              Applied advanced data analysis techniques, such as regression analysis and trend forecasting, to scrutinize financial data, identifying
-              patterns and anomalies, and providing valuable insights for informed financial decision-making in accounting data.</li>
+              Applied data analysis techniques, including regression and trend forecasting, to examine data. Employing creative analytical skills resulted in the identification of 10+ significant trends and anomalies, enhancing financial decision-making in accounting data.
+            </li>
             <li>
-              Increased 80% efficiency and accuracy by revolutionizing the company&apos;s traditional methods by implementing advanced digital
-              solutions utilizing tools like MS Excel, SQL, and Zoho Books in accounting, auditing activities, and tax consultancy.</li>
+              Negotiated client contracts, resulting in a 15% increase in sales through effective communication skills and relationship-building skills. Streamlined operations using tools like MS Excel, MySQL, and Zoho Books in accounts, auditing, and tax consultancy.
+            </li>
           </ul>
+          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> MySQL, ZohoBooks, MS Excel, Mathematics, Data Analytics</div>
         </div>
 
         {/*  */}
@@ -186,7 +178,7 @@ const resume = () => {
           Education
         </h5>
 
-        {/* Experience */}
+        {/* Education */}
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold'>Masters in Artificial Intelligence</span>
@@ -202,6 +194,18 @@ const resume = () => {
               Oversaw comprehensive understanding, operations in Data Visualization and Acquisition by developing various dashboards, plotting graphs and predictive modelling on financial historical datasets of trending stocks.
             </li>
 
+          </ul>
+        </div>
+        <div className='py-6'>
+          <p className='italic'>
+            <span className='font-bold'>Executive Post Graduate Diploma in Data Science</span>
+            <span className='px-2'>|</span>International Institute of Information Technology (IIIT)
+          </p>
+          <p className='py-1 italic'>Bangaluru, India</p>
+          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+            <li>
+              Developed various projects in supervised as well as unsupervised learning using various Machine Learning algorithms like Linear Regression, Logistic Regression, K-Means Clustering, Decision Trees, Neural Networks etc.
+            </li>
           </ul>
         </div>
       </div>
