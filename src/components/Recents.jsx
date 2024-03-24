@@ -12,9 +12,9 @@ const Recents = () => {
                     <p className='text-xl tracking-widest uppercase text-teal-700 font-bold font-prata'>
                         Current
                     </p>
-                    <h2 className='py-4 text-lg md:text-2xl lg:text-4xl font-prata flex gap-1'> Hot Project <BsFire className="text-yellow-500" /></h2>
+                    <h2 className='py-4 text-lg md:text-2xl lg:text-4xl font-prata flex items-center gap-1'> Hot Project <BsFire className="text-yellow-500" /></h2>
                 </div>
-                <div className='grid grid-cols-2 gap-5'>
+                <div className='grid md:grid-cols-2 gap-5'>
                     <div className="flex items-center">
                         <section>
                             <h1 className='font-bold italic font-cors tracking-wide text-xl'>Visual Question Answering Model</h1>
@@ -41,8 +41,16 @@ const Recents = () => {
                     <Image
                         src={image}
                         alt='transformers.png'
+                        className="hidden md:flex"
                     />
 
+                </div>
+                <div>
+                <Image
+                        src={image}
+                        alt='transformers.png'
+                        className="flex md:hidden"
+                    />
                 </div>
             </div>
 

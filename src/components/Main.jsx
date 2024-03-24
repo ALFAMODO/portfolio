@@ -15,7 +15,7 @@ const Main = () => {
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className='py-2 md:py-4 text-gray-700 text-2xl md:text-4xl lg:text-6xl font-bold tracking-wider'>
+          <h1 className='py-2 md:py-4 text-gray-700 text-2xl md:text-4xl lg:text-6xl font-bold tracking-wide'>
             Hi, I&#39;m <span className='text-teal-700 font-cors'> Shikshit Gupta</span>
           </h1>
           <h1 className='md:py-2 text-gray-700 font-bold text-lg md:text-2xl lg:text-4xl'>Data Scientist</h1>
