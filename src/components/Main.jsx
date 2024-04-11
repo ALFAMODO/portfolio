@@ -4,7 +4,7 @@ import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import AboutImg from '../../public/assets/Resume_QR.jpeg';
+import AboutImg from '../../public/assets/Resume.png';
 import { BiArrowToRight } from 'react-icons/bi';
 
 const Main = () => {
@@ -52,8 +52,8 @@ const Main = () => {
               </div>
             </Link>
           </div>
-          <div className="flex justify-center mt-4">
-            <Image src={AboutImg} alt='resume' className="border-2 border-teal-700 rounded px-1"/>
+          <div className="flex justify-center mt-4 ">
+            <Image src={AboutImg} alt='resume' className="w-40 h-40 px-1"/>
           </div>
           <Link href="/resume"><button className=" italic mt-2 text-sm rounded-full px-4"><p className="flex justify-center items-center gap-1">Digital Resume<BiArrowToRight/></p></button></Link>
         </div>
