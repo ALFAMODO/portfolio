@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import netflixImg from '../../public/assets/Education.jpg';
+import Img from '../../../public/assets/Education.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -13,11 +13,11 @@ const ecommerce = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={netflixImg}
+          src={Img}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='text-2xl font-prata py-2'>Ecommerce Marketplace</h2>
+          <h2 className='text-2xl font-prata py-2'>Clothing Ecommerce Brand</h2>
           <h3>Next JS / Mongodb / AWS Amplify</h3>
         </div>
       </div>

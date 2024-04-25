@@ -14,7 +14,7 @@ const ProjectItem = ({ title, focus, projectUrl, websiteUrl, description, comple
                         className="flex items-center gap-2 h-10 px-6 font-semibold rounded-md bg-black text-white mt-2 hover:bg-white hover:text-black outline"
                     >
                         <span className="text-xs">
-                            Website
+                            Source
                         </span>
                     </button></Link>
                     <Link href={projectUrl}><button
