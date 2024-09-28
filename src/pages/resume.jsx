@@ -104,6 +104,33 @@ const resume = () => {
           Professional Experience
         </h5>
         {/* Experience */}
+
+        <div className='py-6'>
+          <p className='flex italic'>
+            <span className='font-bold italic'>
+              ZSAnalytics
+            </span>
+            <span className='px-2'>|</span>Noida, IN
+            <span className='px-2'> | </span><Link href="https://zsanalytics.com/"><FaLink className="h-5 w-5 text-rose-500 cursor-pointer" /></Link>
+          </p>
+          <p className='py-1 italic'>Generative AI Intern (2024 May - 2024 Aug)</p>
+          <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Scientist</p>
+          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+            <li>
+              Developed and optimized 5+ LLM models for Gen AI projects, improving model performance and accuracy.
+            </li>
+            <li>
+              Built chatbot for the sports domain using technologies such as Ollama, Llama 3, FAISS, GPT-4, and RAG agents, integrated into React Native.
+
+            </li>
+            <li>
+              Utilized data engineering skills to manage and preprocess large datasets, ensuring efficient machine learning model training and deployment.
+
+            </li>
+          </ul>
+          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> LLM, VLM, OpenAI, Azure, React Native, MongoDB, Python, NumPy, Pandas, Matplotlib, </div>
+        </div>
+
         <div className='py-6'>
           <p className='flex italic'>
             <span className='font-bold italic'>
@@ -115,17 +142,13 @@ const resume = () => {
           <p className='py-1 italic'>Financial Visualization Specialist (2022 Dec - 2023 Aug)</p>
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Scientist</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Discovered emerging market trends through research to build financial models and perform stock market analysis by leveraging Python libraries, and SQL database, resulting in a 17% increase in accuracy that drives informed decision-making and strategic growth.
-            </li>
-            <li>
-              Employed statistical analysis, data visualization, and predictive modeling to inform targeted marketing strategies with customer segmentation analysis based on demographic and behavioral characteristics, leading to a gain of over 100K+ monthly active users.
-            </li>
-            <li>
-              Leveraged advanced analytics and interactive dashboards using Tableau to optimize investment strategies for customers, improving portfolio performance by 5% and 40% boost in product adoption through business analysis & data-centric approaches.
-            </li>
+            <li>Inferenced 3+ LLM models using over 10 million data points from fintech stock data, optimizing strategies for 200+ clients.</li>
+            <li>Applied advanced machine learning techniques, including Regression, Classification, Decision Trees, Anomaly Detection, and Feature Engineering, analyzing over 500,000 financial data entries to uncover emerging market trends, achieving a 17% increase in predictive accuracy.</li>
+            <li>Conducted statistical analysis using probability theory, A/B testing, KPIs, and statistical inference to inform targeted content marketing strategies, achieving a gain of 100K+ monthly active users through customer segmentation.</li>
+            <li>Implemented 20+ interactive dashboards using Tableau, providing real-time insights for marketing, analytics, and sales teams.</li>
+
           </ul>
-          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> Azure, Tableau, Python, MySQL, NumPy, Pandas, Matplotlib, Seaborn, SciPy, Slack, Notion</div>
+          <div className="italic"><span className="font-bold font-cors">SKILLS: </span>LLM, Machine Learning, Tableau, Python, MySQL, NumPy, Pandas, Matplotlib, Seaborn</div>
         </div>
 
         <div className='py-6'>
@@ -139,17 +162,12 @@ const resume = () => {
           <p className='py-1 italic'>Associate Software Engineer (2020 Dec - 2022 Dec)</p>
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Analyst</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Directed the development and deployment of innovative features for the biometric system and automation of audit reports, integrating with an intuitive interface. This strategic enhancement resulted in a remarkable 63% increase in user satisfaction metrics.
-            </li>
-            <li>
-              Developed a comprehensive filtered framework for system logs, mitigating vulnerabilities in credit card transactions. This initiative yielded a notable 7.5% reduction in transaction failures, improving payment processing and ticket issuance procedures.
-            </li>
-            <li>
-              Collaborated closely with clients to refine and optimize both the online ticketing interface and camera monitoring application, exhibiting a detailed approach to tackling more than 20+ intricate business challenges. Applied sophisticated pattern recognition algorithms to enhance system functionality, showcasing adaptability to their unique work culture.
-            </li>
+            <li>Managed development and deployment of pipelines for large ML and Neural Network models on an AWS backend to identify potential churn among annual pass holders, and automated credit card failure reports, resulting in a 63% increase in business intelligence.
+            </li><li>Increased profits by $50,000 by training clustering algorithms with 1M+ Disneyland visitor data, splitting visitors on their purchase patterns.
+            </li><li>Collaborated with global cross-functional Walt Disney teams and business stakeholders to build a face recognition system to optimize online ticketing and mitigate fraud detection using ANN and CNNs, migrating on-prem servers to AWS EC2 instances to achieve business objectives.
+            </li><li>Developed an analytical dashboard using Python libraries (NumPy, Pandas, Matplotlib, Scikit-Learn, Seaborn), generating 70% more revenue in peak seasons.</li>
           </ul>
-          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> React, Python, Javascript, MySQL, MongoDB, Service Now, Splunk, AWS, Jira, Confluence, Rest API </div>
+          <div className="italic"><span className="font-bold font-cors">SKILLS: </span> React, Python, Javascript, MySQL, Face Recognition, Service Now, Splunk, AWS, Jira, Confluence, Rest API </div>
         </div>
 
         <div className='py-6'>
@@ -163,12 +181,11 @@ const resume = () => {
           <p className='py-1 italic'>Technical Intern (2020 July - 2020 Sept)</p>
           <p className='py-1 italic text-sm text-rose-600 font-semibold'>Data Analyst</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Applied data analysis techniques, including regression and trend forecasting, to examine data. Employing creative analytical skills resulted in the identification of 10+ significant trends and anomalies, enhancing financial decision-making in accounting data.
-            </li>
-            <li>
-              Negotiated client contracts, resulting in a 15% increase in sales through effective communication skills and relationship-building skills. Streamlined operations using tools like MS Excel, MySQL, and Zoho Books in accounts, auditing, and tax consultancy.
-            </li>
+            <li>Applied advanced analytics algorithms to scrutinize data, evaluated precision, recall, F1-Score, and ROC-AUC, identifying 10 significant trends & patterns.
+            </li><li>Negotiated client contracts, prioritizing interests and building effective relationships, resulting in a 50% increase in revenue.
+            </li><li>Managed and analyzed a database of 10,000+ client records in accounts, audits, and tax departments using tools like MS Excel, SQL, and Zoho Books, increasing client engagement and retention rates by 10%.
+            </li><li>Ensured 100% compliance with legal and regulatory requirements by preparing and submitting regulatory filings and reports.</li>
+
           </ul>
           <div className="italic"><span className="font-bold font-cors">SKILLS: </span> MySQL, ZohoBooks, MS Excel, Mathematics, Data Analytics</div>
         </div>

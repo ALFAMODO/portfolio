@@ -18,7 +18,7 @@ const Main = () => {
           <h1 className='py-2 md:py-4 text-gray-700 text-2xl md:text-4xl lg:text-6xl font-bold tracking-wide'>
             Hi, I&#39;m <span className='text-teal-700 font-cors'> Shikshit Gupta</span>
           </h1>
-          <h1 className='md:py-2 text-gray-700 font-bold text-lg md:text-2xl lg:text-4xl'>Data Scientist</h1>
+          <h1 className='md:py-2 text-gray-700 font-bold text-lg md:text-2xl lg:text-4xl'>Gen AI Engineer</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto md:text-base text-sm'>
             I am focused on developing data-driven solutions, seamlessly integrating advanced analytics and machine learning techniques with backend technologies to create powerful and insightful data applications.
           </p>
