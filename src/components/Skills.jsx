@@ -11,7 +11,7 @@ import NextJS from '../../public/assets/skills/nextjs.png'
 import AWS from '../../public/assets/skills/aws.png';
 import DataScience from '../../public/assets/skills/DataScience.png';
 import MachineLearning from '../../public/assets/skills/MachineLearning.png';
-import AI from '../../public/assets/skills/AI.png';
+import AI from '../../public/assets/skills/AI.jpg';
 
 const Skills = () => {
   return (
