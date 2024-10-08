@@ -109,7 +109,7 @@ const resume = () => {
             <span className='font-bold italic'>
               ZSAnalytics
             </span>
-            <span className='px-2'>|</span>Noida, IN
+            <span className='px-2'>|</span>New York, NY
             <span className='px-2'> | </span><Link href="https://zsanalytics.com/"><FaLink className="h-5 w-5 text-rose-500 cursor-pointer" /></Link>
           </p>
           <p className='py-1 italic'>Generative AI Intern (2024 May - 2024 Aug)</p>
@@ -123,7 +123,8 @@ const resume = () => {
 
             </li>
             <li>
-              Utilized data engineering skills to manage and preprocess large datasets, ensuring efficient machine learning model training and deployment.
+            Managed and delivered successful AI applications to 10+ clients, from data prep to deployment, ensuring user satisfaction.
+
 
             </li>
           </ul>
