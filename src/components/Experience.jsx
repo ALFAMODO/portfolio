@@ -20,8 +20,9 @@ const Experience = () => {
                             <Image src={ZSAnalyticsImage} alt="ZS Analytics logo" layout="fill" objectFit="contain" />
                         </div>
                         <div className="card-details">
-                            <h3>ZSAnalytics</h3>
+                            <h3 className='font-robert'>ZSAnalytics</h3>
                             <p>Gen AI Engineer</p>
+                            <p className="italic font-sm">Internship</p>
                             <p>2024 - 2024</p>
                         </div>
                     </div>
@@ -30,8 +31,9 @@ const Experience = () => {
                             <Image src={OptiontoolsImage} alt="Optiontools logo" layout="fill" objectFit="contain" />
                         </div>
                         <div className="card-details">
-                            <h3>Optiontools</h3>
+                            <h3 className='font-robert'>Optiontools</h3>
                             <p>Data Scientist</p>
+                            <p className="italic font-sm">Full-Time</p>
                             <p>2022 - 2023</p>
                         </div>
                     </div>
@@ -41,8 +43,9 @@ const Experience = () => {
                             <Image src={CapgeminiImage} alt="Capgemini logo" layout="fill" objectFit="contain" />
                         </div>
                         <div className="card-details">
-                            <h3>Capgemini</h3>
+                            <h3 className='font-robert'>Capgemini</h3>
                             <p>Software Developer</p>
+                            <p className="italic font-sm">Full-Time</p>
                             <p>2020 - 2022</p>
                         </div>
                     </div>

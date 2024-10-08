@@ -44,7 +44,7 @@ const Main = () => {
             {typewriterText}
           </h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto md:text-base text-sm'>
-            I am focused on developing data-driven solutions, seamlessly integrating advanced analytics and machine learning techniques with backend technologies to create powerful and insightful data applications.
+            I am a complete blend of AI engineer, data scientist, and software developer, focused on developing data-driven solutions that seamlessly integrate advanced analytics and machine learning techniques with backend technologies to create powerful and insightful data applications.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
@@ -77,11 +77,11 @@ const Main = () => {
             </Link>
           </div>
           <div className="flex justify-center mt-4 ">
-            <Image src={AboutImg} alt='resume' className="w-40 h-40 px-1"/>
+            <Image src={AboutImg} alt='resume' className="w-40 h-40 px-1" />
           </div>
           <Link href="/resume">
             <button className="italic mt-2 text-sm rounded-full px-4">
-              <p className="flex justify-center items-center gap-1">Digital Resume<BiArrowToRight/></p>
+              <p className="flex justify-center items-center gap-1">Digital Resume<BiArrowToRight /></p>
             </button>
           </Link>
         </div>
