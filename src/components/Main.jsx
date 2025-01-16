@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import AboutImg from '../../public/assets/Latest_Resume.png';
+import AboutImg from '../../public/assets/qr.png';
 import { BiArrowToRight } from 'react-icons/bi';
 
 const useTypewriter = (text, speed) => {

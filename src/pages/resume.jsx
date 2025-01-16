@@ -138,18 +138,16 @@ const resume = () => {
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
               Optimized LLM Models for intelligent document retrieval in
-              customer support, leveraging RAG and Azure to boost query accuracy
-              by 30%.
+              customer service, leveraging RAG and Azure, increasing query
+              accuracy by 30%.
             </li>
             <li>
-              Integrated models into iOS apps via API, enabling instant,
-              accurate responses for customer support queries and reducing
-              latency by 20%.
+              Built predictive models for sales trends and inventory management,
+              reducing delivery downtime by 20% via demand forecasting.
             </li>
             <li>
-              Led the implementation of new models through in-depth research and
-              curating high-quality data, resulting in 2x speed in overall
-              response.
+              Enhanced CVR by 50% using personalized recommendation chatbots,
+              streamlining instant data access and cutting manual workload.
             </li>
           </ul>
           <div className="italic">
@@ -176,27 +174,23 @@ const resume = () => {
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Implemented and tested multiple RAG-based LLM models to create a
-              finance option trading chatbot that enables premium clients to
-              retrieve backtesting results of past data, leading to a 50%
-              increase in client satisfaction.
-            </li>{" "}
-            <li>
-              Developed an ML framework to predict upcoming market patterns
-              using clustering & 50K+ FinTech data points, enhancing accuracy by
-              17%.
-            </li>{" "}
-            <li>
-              Leveraged A/B testing to validate predictive modeling to analyze
-              historical data and forecast market trends, improving social media
-              advertising and SEO to reach specific demographics, resulting in
-              increased brand visibility with a gain of 100K+ quarterly active
-              users.
+              Implemented RAG-based LLM models for a finance options trading
+              chatbot, improving premium client satisfaction by 50% through
+              efficient backtesting retrieval.
             </li>
             <li>
-              Automated progress dashboard in Tableau integrating with Google
-              Analytics to feature user activity, enhancing 80% engagement
-              visibility.
+              Designed regression models with 50K+ FinTech data points to
+              predict market patterns, improving accuracy by 17%.
+            </li>
+            <li>
+              Conducted A/B testing and advanced data modeling to analyze
+              historical trends, boosting SEO reach and social media campaigns,
+              resulting in 100K+ active users.
+            </li>
+            <li>
+              Built dashboards using Tableau and Google Analytics to monitor
+              user activity, producing ad-hoc insights, and improving engagement
+              by 80%.
             </li>
           </ul>
           <div className="italic">
@@ -221,7 +215,7 @@ const resume = () => {
             Analyst
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-            <li></li>
+
             <li>
               Led the end-to-end development of ML models such as Random Forest
               and GBM on Amazon AWS SageMaker to analyze annual pass holder
