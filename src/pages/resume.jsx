@@ -3,19 +3,16 @@ import Head from "next/head";
 import {
   FaGithub,
   FaLinkedinIn,
-  FaDownload,
   FaPrint,
   FaExternalLinkAlt,
 } from "react-icons/fa";
 import {
   HiOutlineMail,
-  HiOutlinePhone,
   HiOutlineLocationMarker,
   HiOutlineBadgeCheck,
   HiOutlineAcademicCap,
   HiOutlineBriefcase,
 } from "react-icons/hi";
-import Link from "next/link";
 
 const Resume = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -200,13 +197,7 @@ const Resume = () => {
           >
             {/* Action Buttons */}
             <div className="flex justify-end gap-3 mb-6">
-              <button
-                onClick={handleDownload}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-800 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105"
-              >
-                <FaDownload className="w-4 h-4" />
-                <span className="hidden sm:inline">Download</span>
-              </button>
+            
               <button
                 onClick={handlePrint}
                 className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-lg transition-all duration-300 hover:scale-105"
@@ -230,7 +221,7 @@ const Resume = () => {
                 <div className="flex items-center gap-2">
                   <HiOutlineMail className="w-4 h-4" />
                   <span className="text-sm lg:text-base">
-                    shikshit@example.com
+                    shikshit17@hotmail.com
                   </span>
                 </div>
                 <div className="flex items-center gap-2">

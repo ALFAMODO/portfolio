@@ -7,30 +7,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BiArrowToRight } from 'react-icons/bi';
 import AboutImg from '../../public/assets/qr.png';
 
-const useTypewriter = (text, speed) => {
-  const [displayedText, setDisplayedText] = useState('');
-  const [isComplete, setIsComplete] = useState(false);
-
-  useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < text.length) {
-        setDisplayedText((prev) => prev + text.charAt(index));
-        index++;
-      } else {
-        setIsComplete(true);
-        clearInterval(interval);
-      }
-    }, speed);
-
-    return () => clearInterval(interval);
-  }, [text, speed]);
-
-  return { displayedText, isComplete };
-};
-
 const Main = () => {
-  const { displayedText: typewriterText, isComplete } = useTypewriter("AII Product Developer", 100);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -81,12 +58,11 @@ const Main = () => {
           </h1>
         </div>
         
-        {/* Typewriter */}
+        {/* Word by Word Animation */}
         <div className={`transform transition-all duration-800 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-          <h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-8'>
-            {typewriterText}
-            <span className={`inline-block w-0.5 h-8 lg:h-10 bg-gray-900 ml-1 ${isComplete ? 'animate-pulse' : 'animate-pulse'}`}>
-              |
+          <h2 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-8 min-h-[3rem] flex items-center justify-center'>
+            <span className="flex flex-wrap gap-3 justify-center">
+              <p>AI Product Developer</p>
             </span>
           </h2>
         </div>
@@ -183,6 +159,22 @@ const Main = () => {
             padding-left: 1rem;
             padding-right: 1rem;
           }
+        }
+
+        /* Word animation styles */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .word-animate {
+          animation: fadeInUp 0.6s ease-out forwards;
         }
       `}</style>
     </section>
