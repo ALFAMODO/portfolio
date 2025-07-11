@@ -9,25 +9,7 @@ import NavLogo from '../../public/assets/logo.jpeg'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
+  const [activeLink, setActiveLink] = useState('');
 
   const handleNav = () => {
     setNav(!nav);
@@ -42,196 +24,211 @@ const Navbar = () => {
       }
     };
     window.addEventListener('scroll', handleShadow);
+    return () => window.removeEventListener('scroll', handleShadow);
   }, []);
 
-  return (
-    <div
-      className={
-        shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white backdrop-blur-lg '
-          : 'fixed w-full h-20 z-[100]'
-      }
-    >
-      <div className='flex justify-between items-center w-full h-full px-2 lg:px-10 2xl:px-16'>
-        <Link href='/'>
-        
-            <Image
-              src={NavLogo}
-              alt='/'
-              width='70'
-              height='70'
-              className='cursor-pointer'
-            />
-         
-        </Link>
-        <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/'>Home</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'>Skills</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#experience'>Experience</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#education'>Education</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#certifications'>Certifications</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
-            </li>
-            
-          </ul>
-          {/* Hamburger Icon */}
-          <div
-            style={{ color: `${linkColor}` }}
-            onClick={handleNav}
-            className='md:hidden'
-          >
-            <AiOutlineMenu size={25} />
-          </div>
-        </div>
-      </div>
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/#about' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Education', href: '/#education' },
+    { name: 'Certifications', href: '/#certifications' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Resume', href: '/resume' },
+  ];
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
-      <div
-        className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
-        }
+  const socialLinks = [
+    { 
+      icon: <FaLinkedinIn size={18} />, 
+      href: 'https://www.linkedin.com/in/clint-briley-50056920a/',
+      label: 'LinkedIn'
+    },
+    { 
+      icon: <FaGithub size={18} />, 
+      href: 'https://github.com/fireclint',
+      label: 'GitHub'
+    },
+    { 
+      icon: <AiOutlineMail size={18} />, 
+      href: '/#contact',
+      label: 'Contact'
+    },
+    { 
+      icon: <BsFillPersonLinesFill size={18} />, 
+      href: '/resume',
+      label: 'Resume'
+    },
+  ];
+
+  return (
+    <>
+      {/* Main Navbar */}
+      <nav
+        className={`fixed w-full h-20 z-[100] transition-all duration-500 ease-out ${
+          shadow
+            ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-gray-100'
+            : 'bg-white/80 backdrop-blur-md'
+        }`}
       >
-        {/* Side Drawer Menu */}
-        <div
-          className={
-            nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
-          }
-        >
-          <div>
-            <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
-               
-                  <Image
-                    src={NavLogo}
-                    width='70'
-                    height='70'
-                    alt='/'
-                  />
-                
-              </Link>
-              <div
-                onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
-              >
-                <AiOutlineClose />
+        <div className='flex justify-between items-center w-full h-full px-6 lg:px-12 2xl:px-20 max-w-7xl mx-auto'>
+          {/* Logo Section */}
+          <Link href='/' className='group'>
+            <div className='flex items-center space-x-3 transition-transform duration-300 group-hover:scale-105'>
+              <div className='relative overflow-hidden rounded-xl shadow-lg ring-2 ring-gray-900/5'>
+                <Image
+                  src={NavLogo}
+                  alt='Logo'
+                  width={50}
+                  height={50}
+                  className='object-cover transition-transform duration-300 group-hover:scale-110'
+                />
+              </div>
+              <div className='hidden sm:block'>
+                <h1 className='text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent'>
+                  Portfolio
+                </h1>
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
-                Let&#39;s build something legendary together
-              </p>
-            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className='hidden lg:flex items-center space-x-1'>
+            {navItems.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                onMouseEnter={() => setActiveLink(item.name)}
+                onMouseLeave={() => setActiveLink('')}
+                className='relative group px-4 py-2 rounded-lg transition-all duration-300'
+              >
+                <span className='relative z-10 text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-300'>
+                  {item.name}
+                </span>
+                <div className='absolute inset-0 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out'></div>
+                <div className='absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-600 group-hover:w-full group-hover:left-0 transition-all duration-300'></div>
+              </Link>
+            ))}
           </div>
-          <div className='py-4 flex flex-col'>
-            <ul className='uppercase'>
-              <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Home
-                </li>
-              </Link>
-              <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  About
-                </li>
-              </Link>
-              <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
-                </li>
-              </Link>
-              <Link href='/experience'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Experience
-                </li>
-              </Link>
-              <Link href='/education'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Education
-                </li>
-              </Link>
-              <Link href='/#certifications'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Certifications
-                </li>
-              </Link>
-              <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
-                </li>
-              </Link>
-              <Link href='/resume'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Resume
-                </li>
-              </Link>
-              
-            </ul>
-            <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let&#39;s Connect
-              </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-                <a
-                  href='https://github.com/fireclint'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub />
-                  </div>
-                </a>
-                <Link href='/#contact'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+
+          {/* Desktop CTA Button */}
+          <div className='hidden lg:flex items-center space-x-4'>
+            <Link href='/#contact'>
+              <button className='relative px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-gray-900 to-gray-700 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 overflow-hidden group'>
+                <span className='relative z-10'>Get In Touch</span>
+                <div className='absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left'></div>
+              </button>
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={handleNav}
+            className='lg:hidden relative p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-300 group'
+          >
+            <div className='relative w-5 h-5'>
+              <span className={`absolute block w-5 h-0.5 bg-gray-900 transform transition-all duration-300 ${nav ? 'rotate-45 top-2' : 'top-0'}`}></span>
+              <span className={`absolute block w-5 h-0.5 bg-gray-900 transform transition-all duration-300 ${nav ? 'opacity-0' : 'top-2'}`}></span>
+              <span className={`absolute block w-5 h-0.5 bg-gray-900 transform transition-all duration-300 ${nav ? '-rotate-45 top-2' : 'top-4'}`}></span>
+            </div>
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`lg:hidden fixed inset-0 z-[200] transition-all duration-500 ${
+          nav ? 'visible opacity-100' : 'invisible opacity-0'
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className='absolute inset-0 bg-black/50 backdrop-blur-sm'
+          onClick={handleNav}
+        ></div>
+
+        {/* Mobile Menu Panel */}
+        <div
+          className={`absolute right-0 top-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-500 ease-out ${
+            nav ? 'translate-x-0' : 'translate-x-full'
+          }`}
+        >
+          {/* Mobile Menu Header */}
+          <div className='flex items-center justify-between p-6 border-b border-gray-100'>
+            <Link href='/' onClick={() => setNav(false)}>
+              <div className='flex items-center space-x-3'>
+                <Image
+                  src={NavLogo}
+                  width={40}
+                  height={40}
+                  alt='Logo'
+                  className='rounded-lg'
+                />
+                <h2 className='text-lg font-bold text-gray-900'>Portfolio</h2>
+              </div>
+            </Link>
+            <button
+              onClick={handleNav}
+              className='p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-200'
+            >
+              <AiOutlineClose size={20} className='text-gray-700' />
+            </button>
+          </div>
+
+          {/* Mobile Menu Content */}
+          <div className='flex flex-col h-full'>
+            {/* Navigation Links */}
+            <div className='flex-1 py-6'>
+              <nav className='space-y-2 px-6'>
+                {navItems.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    onClick={() => setNav(false)}
+                    className='block px-4 py-3 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-all duration-200 group'
                   >
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link href='/resume'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                  >
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
+                    <span className='text-base font-medium'>{item.name}</span>
+                    <div className='w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300'></div>
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Mobile Menu Footer */}
+            <div className='p-6 border-t border-gray-100 space-y-6'>
+              {/* CTA Button */}
+              <Link href='/#contact' onClick={() => setNav(false)}>
+                <button className='w-full px-6 py-3 text-white bg-gradient-to-r from-gray-900 to-gray-700 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold'>
+                  Get In Touch
+                </button>
+              </Link>
+
+              {/* Social Links */}
+              <div>
+                <p className='text-sm font-semibold text-gray-900 mb-4 tracking-wide'>
+                  LET&apos;S CONNECT
+                </p>
+                <div className='flex space-x-4'>
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.href}
+                      target={social.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={social.href.startsWith('http') ? 'noreferrer' : ''}
+                      onClick={() => setNav(false)}
+                      className='flex items-center justify-center w-12 h-12 bg-gray-50 hover:bg-gray-900 text-gray-700 hover:text-white rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 group'
+                      aria-label={social.label}
+                    >
+                      {social.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
